@@ -39,9 +39,9 @@ export default function TodoList() {
       done: false,
       id: new Date().getTime().toString()
     }
-    const isFinished = todos.some((todo) => todo.name === name)
+    const isFinished = todos.find((todo) => todo.name === name)
     if (isFinished) {
-      alert('This task is already finished')
+      alert('This task is already adding to the list!')
       return
     }
     setTodos((prev) => [...prev, todo])
