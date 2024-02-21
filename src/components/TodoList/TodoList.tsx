@@ -39,6 +39,11 @@ export default function TodoList() {
       done: false,
       id: new Date().getTime().toString()
     }
+    const isFinished = todos.some((todo) => todo.name === name)
+    if (isFinished) {
+      alert('This task is already finished')
+      return
+    }
     setTodos((prev) => [...prev, todo])
     syncLocalStorage((todosObj: Todo[]) => [...todosObj, todo])
   }
