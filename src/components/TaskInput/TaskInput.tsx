@@ -40,7 +40,7 @@ export default function TaskInput(props: TaskInputProps) {
 
   return (
     <div className='mb-2'>
-      <h1 className={styles.titles}>Bảng Kế Hoạch Của Trinh</h1>
+      <h1 className={styles.titles}>Bảng Kế Hoạch</h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <input
           type='text'
