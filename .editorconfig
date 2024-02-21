@@ -1,0 +1,6 @@
+[*]
+# Áp dụng cho tất cả các file
+indent_style = space
+# Sử dụng space thay vì tab
+indent_size = 2
+# Sử dụng 2 space thay vì 4 space
